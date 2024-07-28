@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+#logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+#logo img {
+    max-width: 200px;
+    height: auto;
+}
+#loginScreen, #signupScreen, #dashboard {
+    text-align: center;
+}
+#loginScreen, #signupScreen {
+    margin-top: 50px;
+}
+#loginScreen input, #loginScreen button,
+#signupScreen input, #signupScreen button {
+    margin: 10px;
+    padding: 5px;
+}
+.category-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.category-name {
+    width: 80px;
+    font-weight: bold;
+}
+.gauge-container {
+    flex-grow: 1;
+    margin-right: 20px;
+}
+.gauge-levels {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    background-color: #ECEFF1;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.gauge-level {
+    flex-grow: 1;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+.gauge-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+select {
+    margin-left: 10px;
+}
+.category-note {
+    width: 200px;
+    height: 50px;
+    resize: vertical;
+}
+#submitButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+#history {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.chart-container {
+    width: 48%;
+    margin-bottom: 20px;
+}
+#logoutButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.error {
+    border: 2px solid red;
+}
+.error-message {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+#toggleSignup, #toggleLogin {
+    margin-top: 20px;
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
