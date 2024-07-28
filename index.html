@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Priorities Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+</head>
+<body>
+    <div id="logo">
+        <img src="/api/placeholder/200/50" alt="Life Priorities Dashboard Logo">
+    </div>
+
+    <div id="loginScreen">
+        <h1>Life Priorities Dashboard</h1>
+        <input type="text" id="loginUsername" placeholder="Username">
+        <input type="password" id="loginPassword" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <p id="loginMessage"></p>
+        <p id="toggleSignup" onclick="toggleSignup()">New user? Sign up here</p>
+    </div>
+
+    <div id="signupScreen" style="display: none;">
+        <h1>Sign Up</h1>
+        <input type="text" id="signupUsername" placeholder="Username">
+        <input type="password" id="signupPassword" placeholder="Password">
+        <input type="password" id="signupConfirmPassword" placeholder="Confirm Password">
+        <button onclick="signup()">Sign Up</button>
+        <p id="signupMessage"></p>
+        <p id="toggleLogin" onclick="toggleLogin()">Already have an account? Login here</p>
+    </div>
+
+    <div id="dashboard" style="display: none;">
+        <h1>Life Priorities Dashboard</h1>
+        <button id="logoutButton" onclick="logout()">Logout</button>
+        <div id="categoriesContainer"></div>
+        <button id="submitButton" onclick="submitAll()">Submit All</button>
+        <div id="history">
+            <div class="chart-container"><canvas id="WorkChart"></canvas></div>
+            <div class="chart-container"><canvas id="PlayChart"></canvas></div>
+            <div class="chart-container"><canvas id="LoveChart"></canvas></div>
+            <div class="chart-container"><canvas id="HealthChart"></canvas></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
