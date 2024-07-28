@@ -39,5 +39,7 @@ This is a front-end only demonstration. In a production environment, you would n
 
 ## License
 
-This project is open source. See
+This project is open source. See LICENSE.
+
+
 
